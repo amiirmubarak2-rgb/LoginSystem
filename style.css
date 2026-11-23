@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background:
+      radial-gradient(circle at center,
+      #241044, #080611 65%, #020207);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    background: rgba(10, 7, 24, 0.95);
+    border: 2px solid #a020f0;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow:
+      0 0 15px #a020f0,
+      0 0 35px #7200ff,
+      inset 0 0 20px #450078;
+}
+
+h1 {
+    color: #e6aaff;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px #c000ff;
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #c060ff;
+    border-radius: 50%;
+    color: #d99aff;
+    font-size: 65px;
+    margin: 20px auto 35px;
+    box-shadow: 0 0 20px #a020f0;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #8730bd;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 14px;
+    box-shadow: 0 0 8px #6510a0;
+}
+
+.input-box span {
+    color: #dca4ff;
+    font-size: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+.input-box input::placeholder {
+    color: #b9a6c9;
+}
+
+.eye {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.options a, .register a {
+    color: #ce79ff;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg,
+        #8000ff, #d000ff);
+    cursor: pointer;
+    box-shadow: 0 0 15px #a000ff;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 30px #d000ff;
+    transform: scale(1.02);
+}
+
+.register {
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+#message {
+    margin-top: 15px;
+    color: #c78cff;
+}
+
+@media(max-width: 400px) {
+    .login-box {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box">
+
+    <h1>LOGIN</h1>
+
+    <div class="user-icon">♙</div>
+
+    <form onsubmit="login(event)">
+
+        <div class="input-box">
+            <span>👤</span>
+            <input type="text" id="username"
+                   placeholder="Username" required>
+        </div>
+
+        <div class="input-box">
+            <span>🔒</span>
+            <input type="password" id="password"
+                   placeholder="Password" required>
+            <span class="eye" onclick="togglePassword()">◉</span>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox">
+                Remember me
+            </label>
+
+            <a href="#" onclick="forgotPassword(event)">
+                Forgot password?
+            </a>
+        </div>
+
+        <button type="submit">LOGIN</button>
+
+        <p id="message"></p>
+
+        <div class="register">
+            Don't have an account?
+            <a href="#" onclick="register(event)">Register</a>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
