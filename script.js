@@ -13,6 +13,12 @@ function login(event) {
     if (username === "admin" && password === "12345") {
         message.style.color = "#00ff88";
         message.innerHTML = "Login Successful! Welcome Admin.";
+
+        setTimeout(function() {
+        window.location.href = "Dashboard.html";
+    }, 1000);
+
+
     } else {
         message.style.color = "red";
         message.innerHTML = "Wrong Username or Password!";
